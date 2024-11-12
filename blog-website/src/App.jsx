@@ -21,6 +21,7 @@ function App() {
         <Route path='/expand' element={<Expand/>}/>
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Contact/>
       </>
   );
 }

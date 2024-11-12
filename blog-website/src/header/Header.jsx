@@ -2,15 +2,17 @@
 import React from 'react'
 import {useNavigate} from 'react-router-dom';
 import '../header/Header.css'
-import Instagram from '../assets/instagram.webp'
-import Facebook from '../assets/facebook.png'
-import Twitter from '../assets/twitter.webp'
+
 const Header = () => {
 
     const navigate = useNavigate();
 
     const handleHome = () =>{
         navigate('/')
+    }
+
+    const handleContact = ()=>{
+        navigate('/contact')
     }
 
     const handleAbout = () => {
@@ -33,15 +35,7 @@ const Header = () => {
         cursor:'pointer'
       }} onClick={() => navigate(-1)}>Go back</button>
             <div className='media-icons'>
-                <div>
-                    <img src={Instagram} alt='instagram'/>
-                </div>
-                <div>
-                    <img src={Facebook} alt='facebook'/>
-                </div> 
-                <div>
-                    <img src={Twitter} alt='twitter'/>
-                </div>
+                <h2 style={{fontSize: '32px'}}>Welcome!</h2>
             </div>
             <div className='header-flex'>
                 <div className='header-details' onClick={handleHome}>
@@ -50,7 +44,7 @@ const Header = () => {
                 <div className='header-details' onClick={handleAbout}>
                     ABOUT
                 </div>
-                <div className='header-details'>
+                <div className='header-details' onClick={handleContact}>
                     CONTACT
                 </div>
                 <div className='header-details' onClick={handleWrite}>

@@ -5,7 +5,7 @@
 .header-box {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: bisque;
     height: 70px;
     padding: 0 20px;
