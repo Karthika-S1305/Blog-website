@@ -1,0 +1,36 @@
+.write-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-text{
+    width: 900px;
+    height: 40px;
+    padding: 5px;
+    margin: 10px;
+    text-align: start;
+    align-items: center;
+    border-radius: 5px;
+    border: 0.5px solid grey;
+}
+
+.textarea{
+    width: 900px;
+    height: 400px;
+    padding: 5px;
+    margin: 10px;
+    text-align: start;
+    align-items: center;
+    border-radius: 5px;
+
+}
+
+button{
+    width: 80px;
+    height: 30px;
+    color: #fff;
+    background-color: blue;
+    border: none;
+}
